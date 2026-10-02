@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TEST WEBSITES</title>
+  <meta name="description" content="開発・測試中的網頁一覽">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1>TEST WEBSITES</h1>
+      <p class="subtitle">Development &amp; Testing Index</p>
+      <p class="lede">開発・測試中的網頁一覽</p>
+    </header>
+
+    <main>
+      <!--
+        新增網站：複製一整個 li，改名稱、網址、簡介、按鈕 href、data-copy，
+        以及圖片 src。圖片檔名與 images/ 內的檔案一致即可。
+        非正式頁面可在名稱後加上 <span class="badge">TEST</span>。
+      -->
+      <ul class="site-list">
+        <li>
+          <article class="card">
+            <div class="card-media">
+              <img
+                src="images/english-pronunciation.webp"
+                alt="English Pronunciation"
+                width="1200"
+                height="750"
+                onerror="this.classList.add('is-missing')"
+              >
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">English Pronunciation</h2>
+              <div class="card-url">
+                <span class="card-url-text">https://etbase.github.io/english-pronunciation/</span>
+                <button
+                  type="button"
+                  class="copy-btn"
+                  data-copy="https://etbase.github.io/english-pronunciation/"
+                  aria-label="複製網址"
+                >
+                  <svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="8" y="8" width="12" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"></rect>
+                    <path d="M16 6V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H6" fill="none" stroke="currentColor" stroke-width="1.6"></path>
+                  </svg>
+                  <svg class="icon-check" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12.5l4.2 4.2L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+              <p class="card-desc">英語發音練習與分析系統。可進行朗讀錄音，並針對發音進行分析與評分。</p>
+              <a class="visit-btn" href="https://etbase.github.io/english-pronunciation/" target="_blank" rel="noopener noreferrer">VIEW SITE ↗</a>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="card">
+            <div class="card-media">
+              <img
+                src="images/wave-compare.webp"
+                alt="Wave Compare"
+                width="1200"
+                height="750"
+                onerror="this.classList.add('is-missing')"
+              >
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Wave Compare</h2>
+              <div class="card-url">
+                <span class="card-url-text">https://etbase.github.io/wave-compare/</span>
+                <button
+                  type="button"
+                  class="copy-btn"
+                  data-copy="https://etbase.github.io/wave-compare/"
+                  aria-label="複製網址"
+                >
+                  <svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="8" y="8" width="12" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"></rect>
+                    <path d="M16 6V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H6" fill="none" stroke="currentColor" stroke-width="1.6"></path>
+                  </svg>
+                  <svg class="icon-check" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12.5l4.2 4.2L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+              <p class="card-desc">語音波形比較測試工具。用來比較不同語音的波形與發音差異，作為音源測試與分析使用。</p>
+              <a class="visit-btn" href="https://etbase.github.io/wave-compare/" target="_blank" rel="noopener noreferrer">VIEW SITE ↗</a>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="card">
+            <div class="card-media">
+              <img
+                src="images/type-game.webp"
+                alt="英文打字金幣挑戰"
+                width="1200"
+                height="750"
+                onerror="this.classList.add('is-missing')"
+              >
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">英文打字金幣挑戰</h2>
+              <div class="card-url">
+                <span class="card-url-text">https://etbase.github.io/type-game/</span>
+                <button
+                  type="button"
+                  class="copy-btn"
+                  data-copy="https://etbase.github.io/type-game/"
+                  aria-label="複製網址"
+                >
+                  <svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="8" y="8" width="12" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"></rect>
+                    <path d="M16 6V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H6" fill="none" stroke="currentColor" stroke-width="1.6"></path>
+                  </svg>
+                  <svg class="icon-check" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12.5l4.2 4.2L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+              <p class="card-desc">英文打字練習遊戲。在金幣掉落至終點前輸入正確的英文，透過不同難度的關卡練習單字與片語打字。</p>
+              <a class="visit-btn" href="https://etbase.github.io/type-game/" target="_blank" rel="noopener noreferrer">VIEW SITE ↗</a>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="card">
+            <div class="card-media">
+              <img
+                src="images/kk-phonetic-learning.webp"
+                alt="KK Phonetic Learning"
+                width="1200"
+                height="750"
+                onerror="this.classList.add('is-missing')"
+              >
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">KK Phonetic Learning</h2>
+              <div class="card-url">
+                <span class="card-url-text">https://etbase.github.io/kk-phonetic-learning/</span>
+                <button
+                  type="button"
+                  class="copy-btn"
+                  data-copy="https://etbase.github.io/kk-phonetic-learning/"
+                  aria-label="複製網址"
+                >
+                  <svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="8" y="8" width="12" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"></rect>
+                    <path d="M16 6V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H6" fill="none" stroke="currentColor" stroke-width="1.6"></path>
+                  </svg>
+                  <svg class="icon-check" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12.5l4.2 4.2L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+              <p class="card-desc">KK 音標互動學習網站。透過分級練習與互動題目，學習音標、單字與句子的發音。</p>
+              <a class="visit-btn" href="https://etbase.github.io/kk-phonetic-learning/" target="_blank" rel="noopener noreferrer">VIEW SITE ↗</a>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="card">
+            <div class="card-media">
+              <img
+                src="images/test.webp"
+                alt="KK Phonetic Learning – TEST"
+                width="1200"
+                height="750"
+                onerror="this.classList.add('is-missing')"
+              >
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">
+                KK Phonetic Learning – TEST
+                <span class="badge">TEST</span>
+              </h2>
+              <div class="card-url">
+                <span class="card-url-text">https://etbase.github.io/test/</span>
+                <button
+                  type="button"
+                  class="copy-btn"
+                  data-copy="https://etbase.github.io/test/"
+                  aria-label="複製網址"
+                >
+                  <svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="8" y="8" width="12" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"></rect>
+                    <path d="M16 6V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H6" fill="none" stroke="currentColor" stroke-width="1.6"></path>
+                  </svg>
+                  <svg class="icon-check" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12.5l4.2 4.2L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+              <p class="card-desc">KK 音標互動學習網站的語音測試頁面。更換不同語音後，用來比較音標的發音效果與確認播放結果。</p>
+              <a class="visit-btn" href="https://etbase.github.io/test/" target="_blank" rel="noopener noreferrer">VIEW SITE ↗</a>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="card">
+            <div class="card-media">
+              <img
+                src="images/english-pronunciation-kk.webp"
+                alt="English Pronunciation – KK 音標"
+                width="1200"
+                height="750"
+                onerror="this.classList.add('is-missing')"
+              >
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">English Pronunciation – KK 音標</h2>
+              <div class="card-url">
+                <span class="card-url-text">https://etbase.github.io/english-pronunciation/kk.html</span>
+                <button
+                  type="button"
+                  class="copy-btn"
+                  data-copy="https://etbase.github.io/english-pronunciation/kk.html"
+                  aria-label="複製網址"
+                >
+                  <svg class="icon-copy" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="8" y="8" width="12" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"></rect>
+                    <path d="M16 6V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H6" fill="none" stroke="currentColor" stroke-width="1.6"></path>
+                  </svg>
+                  <svg class="icon-check" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12.5l4.2 4.2L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+              <p class="card-desc">KK 音標發音參考頁面。收錄母音與子音，可個別播放音標發音，作為發音學習與比較使用。</p>
+              <a class="visit-btn" href="https://etbase.github.io/english-pronunciation/kk.html" target="_blank" rel="noopener noreferrer">VIEW SITE ↗</a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </main>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

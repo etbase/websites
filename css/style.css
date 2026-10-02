@@ -1,0 +1,283 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #171717;
+  background: #f4f4f4;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, "PingFang TC", "Hiragino Sans", "Noto Sans CJK TC", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 48px 32px 88px;
+}
+
+.site-header {
+  margin-bottom: 36px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.375rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  color: #6a6a6a;
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+}
+
+.lede {
+  margin: 12px 0 0;
+  color: #4a4a4a;
+  font-size: 0.9375rem;
+}
+
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 40% minmax(0, 1fr);
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-media {
+  position: relative;
+  align-self: start;
+  width: 100%;
+  background: #e6e6e6;
+}
+
+.card-media::before {
+  content: "";
+  display: block;
+  width: 100%;
+  aspect-ratio: 8 / 5;
+}
+
+.card-media::after {
+  content: "1200 × 750";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #8f8f8f;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  pointer-events: none;
+}
+
+.card-media img {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-media img.is-missing {
+  visibility: hidden;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+  padding: 28px 32px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 6px 0;
+  border: 1px solid #171717;
+  border-radius: 2px;
+  color: #171717;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  vertical-align: 2px;
+}
+
+.card-url {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.card-url-text {
+  min-width: 0;
+  color: #555;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.copy-btn {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-top: -2px;
+  padding: 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  background: #fff;
+  color: #222;
+  cursor: pointer;
+}
+
+.copy-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.copy-btn .icon-check {
+  display: none;
+}
+
+.copy-btn:hover {
+  border-color: #171717;
+  background: #171717;
+  color: #fff;
+}
+
+.copy-btn.is-copied {
+  border-color: #171717;
+  background: #171717;
+  color: #fff;
+}
+
+.copy-btn.is-copied .icon-copy {
+  display: none;
+}
+
+.copy-btn.is-copied .icon-check {
+  display: block;
+}
+
+.card-desc {
+  margin: 0;
+  flex: 1 1 auto;
+  color: #3a3a3a;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+
+.visit-btn {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-end;
+  justify-content: center;
+  margin-top: 8px;
+  padding: 0.65rem 1.15rem;
+  border: 1px solid #171717;
+  border-radius: 4px;
+  background: #171717;
+  color: #fff;
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.visit-btn:hover {
+  background: #fff;
+  color: #171717;
+}
+
+.copy-btn:focus-visible,
+.visit-btn:focus-visible {
+  outline: 2px solid #171717;
+  outline-offset: 2px;
+}
+
+@media (max-width: 1024px) {
+  .page {
+    padding: 36px 24px 72px;
+  }
+
+  .site-list {
+    gap: 16px;
+  }
+
+  .card-body {
+    padding: 22px 22px;
+  }
+}
+
+@media (max-width: 999px) {
+  .page {
+    padding: 28px 16px 56px;
+  }
+
+  .site-header {
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+  }
+
+  .site-header h1 {
+    font-size: 1.2rem;
+    letter-spacing: 0.14em;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card-body {
+    padding: 18px 16px 20px;
+  }
+
+  .visit-btn {
+    width: 100%;
+    align-self: stretch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .visit-btn {
+    transition: none;
+  }
+}
